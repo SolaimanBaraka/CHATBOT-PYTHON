@@ -1,0 +1,60 @@
+{"pregunta": "¿Qué comando se usa para crear un usuario en Ubuntu?", "respuesta": "sudo adduser nombre_usuario"}
+{"pregunta": "¿Cómo añadir un nuevo usuario con su carpeta personal en Ubuntu?", "respuesta": "sudo useradd -m nombre_usuario && sudo passwd nombre_usuario"}
+{"pregunta": "¿Qué comando permite añadir un usuario a un grupo?", "respuesta": "sudo usermod -aG nombre_grupo nombre_usuario"}
+{"pregunta": "¿Cómo asignar un usuario a un grupo específico en Linux?", "respuesta": "sudo gpasswd -a nombre_usuario nombre_grupo"}
+{"pregunta": "¿Cómo eliminar un usuario pero conservar su carpeta personal?", "respuesta": "sudo deluser nombre_usuario"}
+{"pregunta": "¿Qué comando elimina un usuario sin afectar su directorio personal?", "respuesta": "sudo userdel nombre_usuario"}
+{"pregunta": "¿Cómo modificar la contraseña de un usuario desde la terminal?", "respuesta": "sudo passwd nombre_usuario"}
+{"pregunta": "¿Qué comando permite cambiar la contraseña del usuario actual?", "respuesta": "passwd"}
+{"pregunta": "¿Cómo se instala Apache en un servidor Ubuntu?", "respuesta": "sudo apt update && sudo apt install apache2"}
+{"pregunta": "¿Qué comando debo usar para instalar Apache en Linux?", "respuesta": "sudo apt install apache2"}
+{"pregunta": "¿Dónde están los archivos principales de configuración de Apache?", "respuesta": "/etc/apache2/apache2.conf"}
+{"pregunta": "¿En qué ubicación se encuentran los sitios configurados en Apache?", "respuesta": "/etc/apache2/sites-available/"}
+{"pregunta": "¿Cómo se configura un nuevo virtual-host en Apache?", "respuesta": "sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mi_sitio.conf"}
+{"pregunta": "¿Qué pasos se siguen para crear un virtual-host en Apache?", "respuesta": "sudo a2ensite mi_sitio.conf && sudo systemctl reload apache2"}
+{"pregunta": "¿Cómo cambiar los permisos de un archivo en Linux?", "respuesta": "chmod 755 archivo"}
+{"pregunta": "¿Qué comando otorga permisos de ejecución a un script?", "respuesta": "chmod +x script.sh"}
+{"pregunta": "¿Qué comando muestra los permisos de un archivo?", "respuesta": "ls -l archivo"}
+{"pregunta": "¿Cómo puedo ver los permisos de un archivo específico?", "respuesta": "stat archivo"}
+{"pregunta": "¿Cómo cambiar el propietario de un archivo en Linux?", "respuesta": "sudo chown usuario archivo"}
+{"pregunta": "¿Qué comando asigna un nuevo propietario y grupo a un archivo?", "respuesta": "sudo chown usuario:grupo archivo"}
+{"pregunta": "¿Cómo monitorear el uso de CPU y memoria en tiempo real?", "respuesta": "top"}
+{"pregunta": "¿Qué herramienta muestra el uso de recursos en tiempo real?", "respuesta": "htop"}
+{"pregunta": "¿Cómo ver el espacio libre en el disco desde la terminal?", "respuesta": "df -h"}
+{"pregunta": "¿Qué comando me permite revisar el espacio ocupado en un directorio?", "respuesta": "du -sh /ruta"}
+{"pregunta": "¿Cómo saber cuánta RAM está siendo utilizada en mi sistema?", "respuesta": "free -h"}
+{"pregunta": "¿Qué comando muestra información detallada de memoria en Linux?", "respuesta": "vmstat"}
+{"pregunta": "¿Cómo saber qué procesos consumen más CPU en el sistema?", "respuesta": "ps aux --sort=-%cpu"}
+{"pregunta": "¿Qué herramienta puedo usar para identificar los procesos con mayor consumo de CPU?", "respuesta": "top"}
+{"pregunta": "¿Cómo ver las últimas líneas de un archivo de log del sistema?", "respuesta": "tail -f /var/log/syslog"}
+{"pregunta": "¿Qué comando muestra los logs del sistema en tiempo real?", "respuesta": "journalctl -f"}
+{"pregunta": "¿Cómo iniciar un servicio en Linux?", "respuesta": "sudo systemctl start servicio"}
+{"pregunta": "¿Qué comando se usa para arrancar un servicio en Linux?", "respuesta": "sudo service servicio start"}
+{"pregunta": "¿Cómo detener un servicio en Linux?", "respuesta": "sudo systemctl stop servicio"}
+{"pregunta": "¿Qué comando apaga un servicio activo?", "respuesta": "sudo service servicio stop"}
+{"pregunta": "¿Cómo verificar si un servicio está funcionando?", "respuesta": "sudo systemctl status servicio"}
+{"pregunta": "¿Qué comando verifica el estado de un servicio en Linux?", "respuesta": "sudo service servicio status"}
+{"pregunta": "¿Cómo reiniciar un servicio en Linux?", "respuesta": "sudo systemctl restart servicio"}
+{"pregunta": "¿Qué comando se usa para reiniciar un servicio?", "respuesta": "sudo service servicio restart"}
+{"pregunta": "¿Cómo listar todos los servicios activos en el sistema?", "respuesta": "sudo systemctl list-units --type=service"}
+{"pregunta": "¿Qué comando muestra los servicios en ejecución?", "respuesta": "service --status-all"}
+{"pregunta": "¿Cómo habilitar un servicio para que se inicie con el sistema?", "respuesta": "sudo systemctl enable servicio"}
+{"pregunta": "¿Qué comando activa un servicio en el arranque del sistema?", "respuesta": "sudo chkconfig servicio on"}
+{"pregunta": "¿Cómo deshabilitar un servicio del inicio del sistema?", "respuesta": "sudo systemctl disable servicio"}
+{"pregunta": "¿Qué comando evita que un servicio arranque al inicio?", "respuesta": "sudo chkconfig servicio off"}
+{"pregunta": "¿Cuál es la diferencia entre rutas absolutas y relativas?", "respuesta": "Una ruta absoluta comienza desde la raíz del sistema y se escribe como `/directorio/...`"}
+{"pregunta": "¿Qué define a una ruta relativa en Linux?", "respuesta": "Una ruta relativa se basa en la ubicación actual y se escribe como `./subdirectorio/...`"}
+{"pregunta": "¿Cómo navegar entre directorios usando rutas absolutas?", "respuesta": "cd /home/usuario/documentos"}
+{"pregunta": "¿Cómo moverse entre directorios con rutas relativas?", "respuesta": "cd ../subdirectorio"}
+{"pregunta": "¿Cómo me muevo a un directorio en Ubuntu?", "respuesta": "cd /ruta/del/directorio"}
+{"pregunta": "¿Qué comando se usa para cambiar de directorio en Ubuntu?", "respuesta": "cd /ruta/del/directorio"}
+{"pregunta": "¿Cómo me muevo a un directorio en Arch?", "respuesta": "cd /ruta/del/directorio"}
+{"pregunta": "¿Qué comando se usa para cambiar de directorio en Kali Linux?", "respuesta": "cd /ruta/del/directorio"}
+{"pregunta":"¿Cómo listar los contenedores Docker?","respuesta":"docker ps"}
+{"pregunta":"¿Qué comando inicia un contenedor Docker?","respuesta":"docker run"}
+{"pregunta":"¿Cómo detener un contenedor Docker?","respuesta":"docker stop"}
+{"pregunta":"¿Qué comando muestra los volúmenes Docker?","respuesta":"docker volume ls"}
+{"pregunta":"¿Cómo crear una red Docker?","respuesta":"docker network create"}
+{"pregunta":"¿Qué comando muestra los logs de un contenedor?","respuesta":"docker logs"}
+{"pregunta":"¿Cómo ejecutar un comando dentro de un contenedor?","respuesta":"docker exec"}
+
